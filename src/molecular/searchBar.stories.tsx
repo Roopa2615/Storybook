@@ -9,10 +9,11 @@ export interface SearchBarProps {
   type?: "text" | "number";
   buttonVariant?: "primary" | "secondary";
   onClick: (newValue?: string | number | string[]) => void;
-  children: ReactNode;
   InputVariant?: "outlined" | "filled" | "standard";
   label?: string;
   inputWidth?: string;
+  children:ReactNode;
+  width?:string;
 }
 
 const meta: Meta = {
