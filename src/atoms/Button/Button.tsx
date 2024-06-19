@@ -2,15 +2,15 @@ import React, { ReactNode } from "react";
 import { Button as ButtonComponent } from "@mui/material";
 
 export interface ButtonProps {
-  children: ReactNode;
   variant?: "primary" | "secondary";
   onClick?: () => void;
+  children?: ReactNode;
 }
 
 export const Button: React.FC<ButtonProps> = ({
-  children,
   variant = "primary",
   onClick,
+  children,
   ...props
 }) => {
   return (

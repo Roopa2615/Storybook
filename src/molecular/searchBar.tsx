@@ -13,9 +13,10 @@ const SearchBar: React.FC<SearchBarProps> = ({
   InputVariant = "outlined",
   onChange,
   onClick,
-  children,
   label,
   inputWidth,
+  children,
+  width,
   ...props
 }) => {
   return (
@@ -23,7 +24,7 @@ const SearchBar: React.FC<SearchBarProps> = ({
       sx={{
         display: "flex",
         flexDirection: "row",
-        width: "100%",
+        width: {width},
         gap: "10px",
         alignItems: "center",
       }}
@@ -56,7 +57,8 @@ const SearchBar: React.FC<SearchBarProps> = ({
           width: "20%",
         }}
       >
-        <Button variant={buttonVariant} onClick={onClick} {...props}>
+        <Button variant={buttonVariant} onClick={onClick}>
+            {children}
         </Button>
       </Box>
     </Box>
