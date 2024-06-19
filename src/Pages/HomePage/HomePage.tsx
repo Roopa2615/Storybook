@@ -17,7 +17,7 @@ const HomePage: React.FC<HomePageProps> = ({ backgroundColor, ...props }) => {
       <Box sx={{ position: "fixed", top: "0px", width: "100%", left: 0 }}>
         <Header backgroundColor="#8700ff" color="#FFF" />
       </Box>
-      <Box sx={{ marginTop: "120px"}}>
+      <Box sx={{ marginTop: "140px"}}>
         <HomeComponent />
       </Box>
       <Box sx={{ position: "fixed", bottom: "0px", width: "100%", left: 0 }}>
