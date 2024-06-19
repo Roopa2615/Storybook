@@ -9,11 +9,10 @@ export interface ButtonProps {
 
 export const Button: React.FC<ButtonProps> = ({
   children,
-  variant='primary',
+  variant = "primary",
   onClick,
   ...props
 }) => {
-
   return (
     <ButtonComponent
       {...props}
@@ -23,12 +22,13 @@ export const Button: React.FC<ButtonProps> = ({
         color: "white",
         padding: "10px",
         borderRadius: "50px",
-        border:'none',
-        textTransform:'capitalize',
-        '&:hover': {
+        border: "none",
+        textTransform: "capitalize",
+        "&:hover": {
           backgroundColor: variant === "primary" ? "blue" : "red", // Same color as the background to remove hover effect
-          boxShadow: 'none', // Remove box shadow if any
+          boxShadow: "none", // Remove box shadow if any
         },
+        width: "100px",
       }}
     >
       {children}
