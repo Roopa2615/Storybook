@@ -1,7 +1,7 @@
 // src/components/CommonMenu.stories.tsx
 import React from 'react';
 import { Meta, StoryFn } from '@storybook/react';
-import CommonMenu from './Popover';
+import CommonMenu from './Menu';
 
 export default {
   title: 'Atoms/CommonMenu',
