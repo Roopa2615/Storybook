@@ -24,5 +24,5 @@ const Template: StoryFn<FooterProps> = (args) => <Footer {...args} />;
 export const Default = Template.bind({});
 
 Default.args = {
-  backgroundColor: "Grey",
+  backgroundColor: "#8700ff",
 };
